@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ringan
+    ports:
+      - "8080:80"
+    restart: always
